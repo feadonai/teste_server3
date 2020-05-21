@@ -16,7 +16,7 @@ io.on('connection', function(socket){
 
 socket.on("JOIN_GAME", function(pack){
   var currentPlayer = {
-    id: pack.id,
+    id: socket.id,
     name: pack.namePlayer
   };
   socket.emit("JOIN_GAME_SUCCES",currentPlayer)
