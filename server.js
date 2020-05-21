@@ -29,7 +29,7 @@ socket.on("JOIN_GAME", function(pack){
 //
 
 
-http.listen(process.env.PORT || 3000, function(){
-  console.log("server listen in 3000");
+http.listen(process.env.PORT, function(){
+  //console.log("server listen in 3000");
 });
-  console.log("-----------------------server is running-----------------------");
+  //console.log("-----------------------server is running-----------------------");
