@@ -13,8 +13,9 @@ var shortId = require('shortid');
 //inicio server
 //
 io.on('connection', function(socket){
-
+console.log(socket.id + " se conectou");
 socket.on("JOIN_GAME", function(pack){
+  console.log(socket.id + " solicitou JOIN_GAME");
   var currentPlayer = {
     id: socket.id,
     name: pack.namePlayer
