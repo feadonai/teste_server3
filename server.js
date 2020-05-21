@@ -8,7 +8,7 @@ var io = require('socket.io')(http);
 
 var shortId = require('shortid');
 
-app.use(express.static(_dirname));
+//app.use(express.static(_dirname));
 //
 //inicio server
 //
